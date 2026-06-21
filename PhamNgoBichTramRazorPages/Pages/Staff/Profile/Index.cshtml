@@ -1,0 +1,45 @@
+﻿@page
+@model PhamNgoBichTramRazorPages.Pages.Staff.Profile.IndexModel
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<h2 class="mb-3">My Profile</h2>
+
+@if (!string.IsNullOrWhiteSpace(Model.Toast))
+{
+    <div class="alert alert-info">@Model.Toast</div>
+}
+
+@if (Model.Account is null)
+{
+    <div class="alert alert-warning">Account not found.</div>
+}
+else
+{
+    <form method="post">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <label class="form-label">Account ID</label>
+                <input class="form-control" value="@Model.Account.AccountID" readonly />
+            </div>
+            <div class="col-md-9">
+                <label class="form-label">Name</label>
+                <input class="form-control" asp-for="Account.AccountName" />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input class="form-control" asp-for="Account.AccountEmail" />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Password</label>
+                <input class="form-control" asp-for="Account.AccountPassword" />
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+}
+
+

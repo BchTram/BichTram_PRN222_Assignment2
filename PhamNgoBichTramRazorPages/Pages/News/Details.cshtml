@@ -1,0 +1,38 @@
+﻿@page "{id}"
+@model PhamNgoBichTramRazorPages.Pages.News.DetailsModel
+@{
+    ViewData["Title"] = "News Details";
+}
+
+@if (Model.Article is null)
+{
+    <div class="alert alert-warning">News article not found.</div>
+}
+else
+{
+    <div class="mb-3">
+        <h2 class="mb-1">@(!string.IsNullOrWhiteSpace(Model.Article.NewsTitle) ? Model.Article.NewsTitle : Model.Article.Headline)</h2>
+        <div class="text-muted">
+            <span>@Model.Article.CreatedDate?.ToString("yyyy-MM-dd HH:mm")</span>
+            <span class="mx-2">•</span>
+            <span>Category: @(Model.Article.Category?.CategoryName ?? "N/A")</span>
+            @if (Model.Article.NewsTags?.Count > 0)
+            {
+                <span class="mx-2">•</span>
+                <span>Tags: @string.Join(", ", Model.Article.NewsTags.Where(t => t.Tag?.TagName != null).Select(t => t.Tag!.TagName))</span>
+            }
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <p class="fw-semibold">@Model.Article.Headline</p>
+            <div style="white-space: pre-wrap">@Model.Article.NewsContent</div>
+            @if (!string.IsNullOrWhiteSpace(Model.Article.NewsSource))
+            {
+                <div class="mt-3 text-muted">Source: @Model.Article.NewsSource</div>
+            }
+        </div>
+    </div>
+}
+

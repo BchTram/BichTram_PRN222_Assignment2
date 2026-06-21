@@ -1,0 +1,40 @@
+﻿@page "/News"
+@model IndexModel
+@{
+    ViewData["Title"] = "News";
+}
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <h2 class="mb-0">Latest News</h2>
+    <form method="get" class="d-flex gap-2">
+        <input class="form-control" name="keyword" value="@Model.Keyword" placeholder="Search title/headline/content..." />
+        <button class="btn btn-outline-primary" type="submit">Search</button>
+    </form>
+</div>
+
+<div class="list-group">
+    @if (Model.News.Count == 0)
+    {
+        <div class="text-muted">No news found.</div>
+    }
+    else
+    {
+        foreach (var n in Model.News)
+        {
+            <a class="list-group-item list-group-item-action" asp-page="/News/Details" asp-route-id="@n.NewsArticleID">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">@(!string.IsNullOrWhiteSpace(n.NewsTitle) ? n.NewsTitle : n.Headline)</h5>
+                    <small class="text-muted">@n.CreatedDate?.ToString("yyyy-MM-dd")</small>
+                </div>
+                <p class="mb-1">@n.Headline</p>
+                <small class="text-muted">
+                    Category: @(n.Category?.CategoryName ?? "N/A")
+                    @if (n.NewsTags?.Count > 0)
+                    {
+                        <span class="ms-2">Tags: @string.Join(", ", n.NewsTags.Where(t => t.Tag?.TagName != null).Select(t => t.Tag!.TagName))</span>
+                    }
+                </small>
+            </a>
+        }
+    }
+</div>
