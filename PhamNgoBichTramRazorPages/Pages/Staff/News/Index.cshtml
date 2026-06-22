@@ -1,7 +1,7 @@
 ﻿@page
 @model PhamNgoBichTramRazorPages.Pages.Staff.News.IndexModel
 @{
-    ViewData["Title"] = "News Management";
+    ViewData["Title"] = "News Article";
 }
 
 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -66,7 +66,7 @@
                     <div class="row g-3">
                         <div class="col-md-3">
                             <label class="form-label">News ID</label>
-                            <input class="form-control" name="Article.NewsArticleId" id="NewsArticleId" />
+                            <input class="form-control" name="Article.NewsArticleID" id="NewsArticleID" />
                         </div>
                         <div class="col-md-9">
                             <label class="form-label">Title</label>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="col-md-6">
                             <label class="form-label">Category</label>
-                            <select class="form-select" name="Article.CategoryId" id="CategoryId">
+                            <select class="form-select" name="Article.CategoryID" id="CategoryID">
                                 <option value="">-- Select --</option>
                                 @foreach (var c in Model.AllCategories)
                                 {
@@ -138,11 +138,13 @@
         function openCreate() {
             document.getElementById('newsModalTitle').innerText = 'Create News';
             document.getElementById('Mode').value = 'Create';
-            document.getElementById('NewsArticleId').readOnly = false;
-            document.getElementById('NewsArticleId').value = '';
+
+            document.getElementById('NewsArticleID').readOnly = false;
+            document.getElementById('NewsArticleID').value = '';
             document.getElementById('NewsTitle').value = '';
             document.getElementById('Headline').value = '';
-            document.getElementById('CategoryId').value = '';
+
+            document.getElementById('CategoryID').value = '';
             document.getElementById('NewsStatus').value = 'true';
             document.getElementById('NewsSource').value = '';
             document.getElementById('NewsContent').value = '';
@@ -155,11 +157,12 @@
             const n = await res.json();
             document.getElementById('newsModalTitle').innerText = 'Update News';
             document.getElementById('Mode').value = 'Update';
-            document.getElementById('NewsArticleId').readOnly = true;
-            document.getElementById('NewsArticleId').value = n.newsArticleId;
+
+            document.getElementById('NewsArticleID').readOnly = true;
+            document.getElementById('NewsArticleID').value = n.newsArticleID ?? n.newsArticleId;
             document.getElementById('NewsTitle').value = n.newsTitle ?? '';
             document.getElementById('Headline').value = n.headline ?? '';
-            document.getElementById('CategoryId').value = (n.categoryId ?? '').toString();
+            document.getElementById('CategoryID').value = (n.newsArticleID ?? n.categoryID ?? n.categoryId ?? '').toString();
             document.getElementById('NewsStatus').value = (n.newsStatus === true).toString();
             document.getElementById('NewsSource').value = n.newsSource ?? '';
             document.getElementById('NewsContent').value = n.newsContent ?? '';
@@ -172,5 +175,3 @@
         connection.start().catch(() => {});
     </script>
 }
-
-

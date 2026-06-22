@@ -62,12 +62,12 @@
                 <div class="modal-body">
                     <input type="hidden" name="Mode" id="Mode" value="Create" />
 
-                    <input type="hidden" name="Account.AccountID" id="HiddenAccountId" />
+                    <input type="hidden" name="Account.AccountID" id="HiddenAccountID" />
 
                     <div class="row g-3">
                         <div class="col-md-3">
                             <label class="form-label">Account ID</label>
-                            <input class="form-control" id="DisplayAccountId" />
+                            <input class="form-control" id="DisplayAccountID" />
                         </div>
                         <div class="col-md-9">
                             <label class="form-label">Name</label>
@@ -108,17 +108,17 @@
             document.getElementById('accountModalTitle').innerText = 'Create Account';
             document.getElementById('Mode').value = 'Create';
 
-            document.getElementById('DisplayAccountId').disabled = false;
-            document.getElementById('DisplayAccountId').value = '';
-            document.getElementById('HiddenAccountId').value = '';
+            document.getElementById('DisplayAccountID').disabled = false;
+            document.getElementById('DisplayAccountID').value = '';
+            document.getElementById('HiddenAccountID').value = '';
 
             document.getElementById('AccountName').value = '';
             document.getElementById('AccountEmail').value = '';
             document.getElementById('AccountRole').value = '1';
             document.getElementById('AccountPassword').value = '';
 
-            document.getElementById('DisplayAccountId').oninput = function() {
-                document.getElementById('HiddenAccountId').value = this.value;
+            document.getElementById('DisplayAccountID').oninput = function() {
+                document.getElementById('HiddenAccountID').value = this.value;
             };
 
             modal.show();
@@ -131,20 +131,18 @@
             document.getElementById('accountModalTitle').innerText = 'Update Account';
             document.getElementById('Mode').value = 'Update';
 
-          
-            document.getElementById('DisplayAccountId').disabled = true;
+            document.getElementById('DisplayAccountID').disabled = true;
 
-     
-            document.getElementById('DisplayAccountId').value = a.accountID ?? a.accountId;
-            document.getElementById('HiddenAccountId').value = a.accountID ?? a.accountId;
+            const accountID = a.accountID ?? a.accountId;
+            document.getElementById('DisplayAccountID').value = accountID;
+            document.getElementById('HiddenAccountID').value = accountID;
 
             document.getElementById('AccountName').value = a.accountName ?? '';
             document.getElementById('AccountEmail').value = a.accountEmail ?? '';
             document.getElementById('AccountRole').value = (a.accountRole ?? 1).toString();
             document.getElementById('AccountPassword').value = a.accountPassword ?? '';
 
-          
-            document.getElementById('DisplayAccountId').oninput = null;
+            document.getElementById('DisplayAccountID').oninput = null;
 
             modal.show();
         }

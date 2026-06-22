@@ -8,6 +8,7 @@ C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNew
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsManagement.Repository.AssemblyInfoInputs.cache
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsManagement.Repository.AssemblyInfo.cs
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsManagement.Repository.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsManagement.Repository.sourcelink.json
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsMa.DE8D6421.Up2Date
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\FUNewsManagement.Repository.dll
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Reposity\obj\Debug\net8.0\refint\FUNewsManagement.Repository.dll

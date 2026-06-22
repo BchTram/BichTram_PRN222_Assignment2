@@ -6,6 +6,7 @@ C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNew
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.AssemblyInfoInputs.cache
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.AssemblyInfo.cs
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.sourcelink.json
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.dll
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\refint\FUNewsManagement.Data.dll
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\FUNewsManagement.Data\obj\Debug\net8.0\FUNewsManagement.Data.pdb

@@ -65,6 +65,7 @@ C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamN
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\PhamNgoBichTramRazorPages.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\PhamNgoBichTramRazorPages.RazorAssemblyInfo.cache
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\PhamNgoBichTramRazorPages.RazorAssemblyInfo.cs
+C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\PhamNgoBichTramRazorPages.sourcelink.json
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\USER\Documents\Visual Studio 2022\CodeC\PhamNgoBichTram_SE19B_A02\PhamNgoBichTramRazorPages\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

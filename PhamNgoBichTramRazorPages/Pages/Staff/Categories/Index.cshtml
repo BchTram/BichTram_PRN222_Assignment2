@@ -61,7 +61,9 @@
                 </div>
                 <div class="modal-body">
                     <input type="hidden" name="Mode" id="Mode" value="Create" />
-                    <input type="hidden" name="Category.CategoryID" id="CategoryIdHidden" />
+
+                    <input type="hidden" name="Category.CategoryID" id="CategoryIDHidden" />
+
                     <div class="row g-3">
                         <div class="col-md-8">
                             <label class="form-label">Name</label>
@@ -101,7 +103,7 @@
         function openCreate() {
             document.getElementById('categoryModalTitle').innerText = 'Create Category';
             document.getElementById('Mode').value = 'Create';
-            document.getElementById('CategoryIdHidden').value = '0';
+            document.getElementById('CategoryIDHidden').value = '0';
             document.getElementById('CategoryName').value = '';
             document.getElementById('CategoryDesciption').value = '';
             document.getElementById('ParentCategoryID').value = '';
@@ -115,8 +117,7 @@
             document.getElementById('categoryModalTitle').innerText = 'Update Category';
             document.getElementById('Mode').value = 'Update';
 
-          
-            document.getElementById('CategoryIdHidden').value = c.categoryID ?? c.categoryId;
+            document.getElementById('CategoryIDHidden').value = c.categoryID ?? c.categoryId;
             document.getElementById('CategoryName').value = c.categoryName ?? '';
             document.getElementById('CategoryDesciption').value = c.categoryDesciption ?? '';
             document.getElementById('ParentCategoryID').value = c.parentCategoryID ?? c.parentCategoryId ?? '';
